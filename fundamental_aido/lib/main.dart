@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:fundamental_aido/basic_widget/alert_dialog.dart';
 import 'package:fundamental_aido/basic_widget/date_picker.dart';
+import 'package:fundamental_aido/basic_widget/fab_widget.dart';
 import 'package:fundamental_aido/basic_widget/input_widget.dart';
 import 'package:fundamental_aido/basic_widget/scaffold_widget.dart';
 void main() {
-  runApp(const MyApp());
+  runApp(const MyFabWidget());
 }
 
 class MyApp extends StatelessWidget {
