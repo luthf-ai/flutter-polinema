@@ -73,7 +73,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Aido 2141720136'),
         ),
-        body: Column(
+        body: ListView(
           children: [
             Image.asset(
               'images/pantai.jpg',
