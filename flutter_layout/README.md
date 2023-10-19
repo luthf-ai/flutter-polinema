@@ -126,3 +126,8 @@ body: ListView(
           children: [
 ```
 ![screenshot](screenshot/image.png)
+## Praktikum 5
+### Home Page
+![screenshot](screenshot/route1.png)
+### Item Page
+![screenshot](screenshot/route2.png)
