@@ -6,7 +6,13 @@ class HomePage extends StatelessWidget {
     Item(name: 'Wiskas', price: 10000),
     Item(name: 'Friskies', price: 5000),
     Item(name: 'Me-O', price: 7000),
-
+    Item(name: 'catfood', price: 15000),
+    Item(name: 'catfood', price: 15000),
+    Item(name: 'catfood', price: 15000),
+    Item(name: 'catfood', price: 15000),
+    Item(name: 'catfood', price: 15000),
+    Item(name: 'catfood', price: 15000),
+    Item(name: 'catfood', price: 15000),
   ];
   
 HomePage({ Key? key }) : super(key: key);
@@ -18,42 +24,53 @@ HomePage({ Key? key }) : super(key: key);
         title: const Text('Shopping List'),
       ),
       body: Container(
-        margin: EdgeInsets.all(8),
-        child: ListView.builder(
-          itemCount: items.length,
-          itemBuilder: (context, index) {
-            final item = items[index];
-            return InkWell(
-              onTap: () {
-                Navigator.pushNamed(context, '/item', arguments: item);
-              },
-              child: Card(
-                child: Container(
-                  margin: EdgeInsets.all(8),
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(item.name),
-                            Text(
-                              item.price.toString(),
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Icon(Icons.chevron_right),
-                    ],
-                  ),
-                ),
+        margin: const EdgeInsets.all(8),
+        child: GridView.builder(
+              gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                maxCrossAxisExtent: 200,
+                childAspectRatio: 2/3,
+                crossAxisSpacing: 10,
+                mainAxisSpacing: 10,
               ),
-            );
-          }
-          )
+              itemCount: items.length,
+              itemBuilder: (BuildContext context, int index){
+                final item = items[index];
+                return InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/item', arguments: item);
+                  },
+                  child: Card(
+                    child: Column(
+                      children: [
+                        Expanded(
+                          child: Image.asset(
+                            'assets/images/${item.name}.jpeg',
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          item.name,
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          'Rp ${item.price}',
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              },
+            ),
       )
     );
   }

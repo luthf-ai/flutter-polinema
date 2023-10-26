@@ -15,7 +15,32 @@ class ItemPage extends StatelessWidget {
         margin: EdgeInsets.all(8),
         child: Center(
           child: 
-            Text(itemArgs.name + ' with ' + itemArgs.price.toString()),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                'assets/images/${itemArgs.name}.jpeg',
+                fit: BoxFit.cover,
+              ),
+              const SizedBox(
+                height: 8,
+              ),
+              Text(
+                itemArgs.name,
+                style: const TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                'Rp ${itemArgs.price}',
+                style: const TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
