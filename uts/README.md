@@ -1,5 +1,6 @@
 # UTS PEMROGRAMAN MOBILE
 Aido Luthfi AL Hakim / 2141720136
+![Github Link](https://github.com/luthf-ai/flutter-polinema/tree/main/uts)
 ## Praktikum 1
 ### Langkah 1: Membangun Layout di Flutter
 ### Langkah 2: Buka file lib/main.dart
@@ -152,7 +153,7 @@ Pada aplikasi ini digunakan package yang terkenal di flutter yakni fl_chart untu
 ![screenshot](screenshot/spender2.png)
 ![screenshot](screenshot/spender3.png)
 
-
+![Github Link](https://github.com/luthf-ai/flutter-polinema/tree/main/uts)
 
 
 
