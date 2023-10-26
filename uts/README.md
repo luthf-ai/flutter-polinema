@@ -1,4 +1,4 @@
-# flutter_layout
+# UTS PEMROGRAMAN MOBILE
 Aido Luthfi AL Hakim / 2141720136
 ## Praktikum 1
 ### Langkah 1: Membangun Layout di Flutter
@@ -131,3 +131,28 @@ body: ListView(
 ![screenshot](screenshot/route1.png)
 ### Item Page
 ![screenshot](screenshot/route2.png)
+## Tambahkan gambar dan gunakan gridview
+![screenshot](screenshot/shop.png)
+![screenshot](screenshot/detail.png)
+
+
+## TUGAS PRAKTIKUM
+### Aplikasi NEST
+Aplikasi nest merupakan aplikasi smart home power management yang saat ini tengah saya kerjakan sambil belajar. Dalam aplikasi ini diimplementasikan routing, penggunaan icon,image dan beberapa custom font untuk menyesuaikan penampilan.
+![screenshot](screenshot/nest_welcome.png)
+pada tampilan welcome merupakan sebuah greeting, logo merupakan sebuah file png. Ketika user memilih mulai maka akan meredirect ke halamam "/" atau home
+![screenshot](screenshot/nest_home.png)
+pada tampilan home, memiliki bottom navigation untuk berpindah halaman. 
+
+### Aplikasi 2 Expense app
+Aplikasi kedua ini merupakan aplikasi untuk tracking pengeluaran uang anda. Dalam aplikasi ini digunakan beberapa controller untuk handler text input dan beberapa class pendukung untuk handle penyimpanan dan penampilan data.
+
+Pada aplikasi ini digunakan package yang terkenal di flutter yakni fl_chart untuk memudahkan dalam penampilan diagram grafik.
+![screenshot](screenshot/spender1.png)
+![screenshot](screenshot/spender2.png)
+![screenshot](screenshot/spender3.png)
+
+
+
+
+
