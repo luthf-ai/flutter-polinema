@@ -26,13 +26,13 @@ class MyApp extends StatelessWidget {
       // home: const FuturePage(),
 
       // Prak 6 langkah 6
-      home: LocationScreen(),
+      // home: LocationScreen(),
 
       // Prak 8 langkah 6
       //   home: const NavigationFirst(),
 
       // Prak 8 langkah 6
-      // home: const NavigationDialogScreen(),
+      home: const NavigationDialogScreen(),
     );
   }
 }
